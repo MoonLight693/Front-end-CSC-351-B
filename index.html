@@ -1,21 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Frontend Web Deveolopment Portfolio">
-    <meta name="keywords" content="HTML, CSS, projects, portfolio">
-    <meta name="author" content="Evan Whitmer">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta title="Frontend Portfolio">
-    <link rel="stylesheet" href="style.css">
+  <!-- Meta tags, title, and link to CSS -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Frontend Web Deveolopment Portfolio">
+  <meta name="keywords" content="HTML, CSS, projects, portfolio">
+  <meta name="author" content="Evan Whitmer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta title="Frontend Portfolio">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .sticky-header {
+      background-color: #333;
+      color: #fff;
+      position: sticky;
+      /* Apply the sticky positioning */
+      top: 0;
+      /* Stick the element to the top of the viewport */
+      z-index: 100;
+      /* Ensure the navbar is above other content */
+    }
+
+    .sticky-header nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .sticky-header ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .sticky-header li {
+      margin-right: 20px;
+    }
+
+    .sticky-header a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .column_header {
+      float: left;
+      width: 33.33%;
+      text-align: center;
+    }
+
+    .row_header {
+      background-image: linear-gradient(to right, red, yellow);
+    }
+
+    /* Clear floats after the columns */
+    .row_header:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .column_header h1 {
+      margin: 0;
+    }
+
+    #Middle {
+      background-color: rgba(255, 255, 255, 0.588);
+      padding-top: 15px;
+      min-width: 300px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .column_header {
+        width: 100%;
+      }
+
+      .sticky-header nav {
+        flex-direction: column;
+      }
+    }
+
+    main {
+      padding: 10px;
+    }
+
+    .column {
+      float: left;
+      width: 50%;
+      text-align: center;
+    }
+
+    .columnLeft {
+      float: left;
+      width: 50%;
+      text-align: center;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 58px;
+      background: rgb(255, 143, 6);
+      color: aliceblue;
+      text-align: center;
+      font-size: 12px;
+      border-top: solid;
+      border-color: #333;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="row_header">
+    <div class="column_header" id="Left">&nbsp;</div>
+    <div class="column_header" id="Middle">
+      <h1>Frontend Portfolio</h1>
+      <h3>Evan Whitmer</h3>
+    </div>
+    <div class="column_header" id="Right"></div>
+  </div>
+  <header class="sticky-header">
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Group Projects</a></li>
+        <li><a href="#">Personal Projects</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <footer>
-
-    </footer>
+  <main>
+    <div class="row">
+      <div class="columnLeft">
+        <img src="Self_photo.jpg" height="120">
+      </div>
+      <div class="columnRight">
+        <article id="About">
+          <h3>About</h3>
+          <p>I am Evan Whitmer, Senior of Computer Science at Franciscan University of Stubenville.</p>
+        </article>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columnLeft"><img src="group-pic.jpg" height="120"></div>
+      <div class="columnRight">
+        <article id="Group-Projects">
+          <h3>Group Projects</h3>
+          <ul>
+            <li><a href="Group_Projects/Mini-Project/index.html">Mini-Project</a></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columnLeft"><img src="Self_photo.jpg" height="120"></div>
+      <div class="columnRight">
+        <article id="Personal-Projects">
+          <h3>Personal Projects</h3>
+          <ul>
+            <li><a href="Lecture 3:Jan-23-2025/Hw1.html">Homework #1</a></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Evan Whitmer</p>
+    <p>2025</p>
+  </footer>
 </body>
 
 </html>
