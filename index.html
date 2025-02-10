@@ -38,6 +38,10 @@
       color: red;
     }
 
+    a:hover {
+      color: rgb(0, 255, 195);
+    }
+
     .sticky-header ul {
       list-style: none;
       margin: 0;
@@ -92,35 +96,44 @@
     }
 
     main {
-      padding: 10px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    img {
+      max-width: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: 50px;
+      margin-top: 20px;
+    }
+
+    .row {
+      display: flex;
+
     }
 
     .column {
-      float: left;
-      width: 50%;
-      text-align: left;
+      flex: 50%;
     }
 
-    .columnLeft {
-      float: left;
-      width: 50%;
-      text-align: center;
+    .left {
+      flex: 30%;
     }
 
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
+    .right {
+      /*Estimate*/
+      margin-right: 160px;
     }
 
     footer {
-      position: absolute;
       bottom: 0;
       width: 100%;
       height: 58px;
       background: rgb(255, 143, 6);
-      color: aliceblue;
+      color: rgb(0, 0, 0);
       text-align: center;
       font-size: 12px;
       border-top: solid;
@@ -151,17 +164,32 @@
 
   <main>
     <div class="row" id="Main-row-1">
-      <div class="columnLeft"><img src="photos/Self_photo.jpg" height="120"></div>
-      <div class="columnRight">
+      <div class="column left"><img src="photos/Self_photo.jpg"></div>
+      <div class="column right">
         <article id="About">
           <h3>About</h3>
-          <p>I am Evan Whitmer, Senior of Computer Science at Franciscan University of Stubenville.</p>
+          <p>Hello, my name is Evan Whitmer. I am a senior computer science major hoping to hone my skills
+            in a variety of languages that will help me land a career after graduation. I am currently
+            studying in a number of web development classes that I expect to use as I peruse a position
+            as a full-stack developer. My current class schedule has me learning bash commands, scripts,
+            and use standards, HTML, CSS, JavaScript, Python, Web APIs, project management in a agile style,
+            and Jira.</p>
+          <p>Originally, growing up I had a great interest in computers and mathematics, which is why while
+            deciding on a major I new that something that has me working in a team environment behind a
+            computer screen was fit for me. After taking numerous math classes at Franciscan University,
+            I knew I never wanted to use it more than I must. Thus, I tried to through myself into the
+            deep end of learning Python, HTML, and CSS. I found that they were easy to understand conceptually
+            and if I ever ran into a problem, there wasn’t a simple Google search that couldn’t solve it.</p>
+          <p>As I progress through my final year, learning, attending classes, and having fun at chess or
+            board game club I hope that the skills I’ve learned will be enough as I start search for jobs
+            and where life will lead me next. </p>
         </article>
       </div>
     </div>
-    <div class="row" id="Main-row-3">
-      <div class="columnLeft"><img src="photos/group-pic.jpg" height="120"></div>
-      <div class="columnRight">
+
+    <div class="row" id="Main-row-2">
+      <div class="column left"><img src="photos/group-pic.jpg"></div>
+      <div class="column right">
         <article id="Group-Projects">
           <h3>Group Projects</h3>
           <ul>
@@ -170,9 +198,10 @@
         </article>
       </div>
     </div>
+
     <div class="row" id="Main-row-3">
-      <div class="columnLeft"><img src="photos/Self_photo.jpg" height="120"></div>
-      <div class="columnRight">
+      <div class="column left"><img src="photos/Html-snippet.png"></div>
+      <div class="column right">
         <article id="Personal-Projects">
           <h3>Personal Projects</h3>
           <p><a href="https://github.com/MoonLight693">https://github.com/MoonLight693</a></p>
@@ -182,6 +211,7 @@
         </article>
       </div>
     </div>
+
   </main>
   <footer>
     <p>Evan Whitmer</p>
