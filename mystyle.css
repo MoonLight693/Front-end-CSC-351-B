@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sticky-header {
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    /* Apply the sticky positioning */
+    top: 0;
+    /* Stick the element to the top of the viewport */
+    z-index: 100;
+    /* Ensure the navbar is above other content */
+}
+
+.sticky-header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+a:hover {
+    color: rgb(0, 255, 195);
+}
+
+.sticky-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sticky-header li {
+    margin-right: 20px;
+}
+
+.sticky-header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.column_header {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+.row_header {
+    background-image: linear-gradient(to right, red, yellow);
+}
+
+/* Clear floats after the columns */
+.row_header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column_header h1 {
+    margin: 0;
+}
+
+#Middle {
+    background-color: rgba(255, 255, 255, 0.588);
+    padding-top: 15px;
+    min-width: 300px;
+}
+
+@media screen and (max-width: 600px) {
+    .column_header {
+        width: 100%;
+    }
+
+    .sticky-header nav {
+        flex-direction: column;
+    }
+}
+
+main {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+img {
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+.left {
+    flex: 30%;
+}
+
+.right {
+    /*Estimate*/
+    margin-right: 160px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 58px;
+    background: rgb(255, 143, 6);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 12px;
+    border-top: solid;
+    border-color: #333;
+}
