@@ -4,7 +4,7 @@
 <head>
   <!-- Meta tags, title, and link to CSS -->
   <meta charset="UTF-8">
-  <meta name="description" content="Frontend Web Deveolopment Portfolio">
+  <meta name="description" content="Frontend Web Development Portfolio">
   <meta name="keywords" content="HTML, CSS, projects, portfolio">
   <meta name="author" content="Evan Whitmer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,16 +13,16 @@
 </head>
 
 <body>
-  <div class="row_header">
-    <div class="column_header" id="Left">&nbsp;</div>
-    <div class="column_header" id="Middle">
-      <h1>Frontend Portfolio</h1>
-      <h3>Evan Whitmer</h3>
+  <header>
+    <div class="row_header">
+      <div class="column_header" id="Left">&nbsp;</div>
+      <div class="column_header" id="Middle">
+        <h1>Frontend Portfolio</h1>
+        <h3>Evan Whitmer</h3>
+      </div>
+      <div class="column_header" id="Right"></div>
     </div>
-    <div class="column_header" id="Right"></div>
-  </div>
-  <header class="sticky-header">
-    <nav>
+    <nav class="sticky-header">
       <ul>
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#About">About</a></li>
@@ -33,49 +33,56 @@
   </header>
 
   <main>
-    <div class="row" id="Main-row-1">
-      <div class="column left"><img src="photos/Self_photo.jpg"></div>
+    <section id="Main-row-1" class="row">
+      <div class="column left">
+        <img src="photos/Self_photo.jpg" alt="Evan Whitmer">
+      </div>
       <div class="column right">
         <article id="About">
           <h3>About</h3>
           <p>Hello, my name is Evan Whitmer. I am a senior computer science major hoping to hone my skills
             in a variety of languages that will help me land a career after graduation. I am currently
-            studying in a number of web development classes that I expect to use as I peruse a position
+            studying in a number of web development classes that I expect to use as I pursue a position
             as a full-stack developer. My current class schedule has me learning bash commands, scripts,
-            and use standards, HTML, CSS, JavaScript, Python, Web APIs, project management in a agile style,
+            and usage standards, HTML, CSS, JavaScript, Python, Web APIs, project management in an agile style,
             and Jira.</p>
           <p>Originally, growing up I had a great interest in computers and mathematics, which is why while
-            deciding on a major I new that something that has me working in a team environment behind a
+            deciding on a major I knew that something that has me working in a team environment behind a
             computer screen was fit for me. After taking numerous math classes at Franciscan University,
-            I knew I never wanted to use it more than I must. Thus, I tried to through myself into the
-            deep end of learning Python, HTML, and CSS. I found that they were easy to understand conceptually
+            I knew I never wanted to use it more than I must. Thus, I tried to throw myself into the
+            deep end of learning Python, HTML, and CSS. I found that they were easy to understand conceptually,
             and if I ever ran into a problem, there wasn’t a simple Google search that couldn’t solve it.</p>
           <p>As I progress through my final year, learning, attending classes, and having fun at chess or
-            board game club I hope that the skills I’ve learned will be enough as I start search for jobs
-            and where life will lead me next. </p>
+            board game club, I hope that the skills I’ve learned will be enough as I start searching for jobs
+            and where life will lead me next.</p>
         </article>
       </div>
-    </div>
+    </section>
 
-    <div class="row" id="Main-row-2">
-      <div class="column left"><img src="photos/group-pic.jpg"></div>
+    <section id="Main-row-2" class="row">
+      <div class="column left">
+        <img src="photos/group-pic.jpg" alt="Group Projects">
+      </div>
       <div class="column right">
         <article id="Group-Projects">
           <h3>Group Projects</h3>
+          <ul>
             <li><a href="http://10.26.1.113/team1/Mini-Project/main.html">Mini-Project</a></li>
             <li><a href="http://10.26.1.113/team1/Mini-CSS-Part-2/Auto-redo/">CSS Re-design</a></li>
             <li><a href="http://10.26.1.113/team1/Mini-SCSS/">SCSS Team Assignment</a></li>
             <li><a href="http://10.26.1.113/team1/CookBook/templates/">Cookbook</a></li>
-            <ul>
-              <li><a href="../First_big_presos.pdf" download="First_big_presos.pdf">FIRST PRESENTATION!!!!</a></li>
-            </ul>
+          </ul>
+          <ul>
+            <li><a href="../First_big_presos.pdf" download="First_big_presos.pdf">First Presentation</a></li>
           </ul>
         </article>
       </div>
-    </div>
+    </section>
 
-    <div class="row" id="Main-row-3">
-      <div class="column left"><img src="photos/Html-snippet.png"></div>
+    <section id="Main-row-3" class="row">
+      <div class="column left">
+        <img src="photos/Html-snippet.png" alt="Personal Projects">
+      </div>
       <div class="column right">
         <article id="Personal-Projects">
           <h3>Personal Projects</h3>
@@ -83,15 +90,15 @@
           <ul>
             <li><a href="Lecture 3:Jan-23-2025/Hw1.html">Homework #1</a></li>
             <li><a href="http://10.26.1.113/whitmere001/Mini-Project-CSS/">Mini-Project-CSS</a></li>
-            <li><a href="http://10.26.1.113/whitmere001/Craigslist/index.html">Craigslist updated</a></li>
+            <li><a href="http://10.26.1.113/whitmere001/Craigslist/index.html">Craigslist Updated</a></li>
             <li><a href="http://10.26.1.113/whitmere001/group-CSS-part-3-bootstrap/Auto-redo/index.html">Bootstrap</a></li>
-            
+            <li><a href="http://10.26.1.113/whitmere001/Javascript-individual/">JavaScript</a></li>
           </ul>
         </article>
       </div>
-    </div>
-
+    </section>
   </main>
+
   <footer>
     <p>Evan Whitmer</p>
     <p>2025</p>
